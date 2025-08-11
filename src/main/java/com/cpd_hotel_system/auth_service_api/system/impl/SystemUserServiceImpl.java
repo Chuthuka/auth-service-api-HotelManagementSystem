@@ -1,9 +1,9 @@
 package com.cpd_hotel_system.auth_service_api.system.impl;
 
+import com.cpd_hotel_system.auth_service_api.BadRequestException;
 import com.cpd_hotel_system.auth_service_api.dto.request.SystemUserRequestDto;
 import com.cpd_hotel_system.auth_service_api.system.SystemUserService;
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.BadRequestException;
 import org.springframework.stereotype.Service;
 
 @Service
