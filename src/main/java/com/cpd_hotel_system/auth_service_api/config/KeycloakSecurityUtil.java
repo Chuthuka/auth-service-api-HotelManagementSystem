@@ -1,5 +1,6 @@
 package com.cpd_hotel_system.auth_service_api.config;
 
+import org.keycloak.admin.client.KeycloakBuilder;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.keycloak.admin.client.Keycloak;
@@ -30,4 +31,19 @@ public class KeycloakSecurityUtil {
 
     @Value("${keycloak.config.secret}")
     private String secret;
+
+    public Keycloak getKeycloakInstance() {
+        if (keycloak == null) {
+            keycloak = KeycloakBuilder.builder()
+                    .serverUrl(serverUrl)
+                    .realm(realm)
+                    .clientId(clientId)
+                    .grantType(grantType)
+                    .username(username)
+                    .password(password)
+                    .clientSecret(secret)
+                    .build();
+        }
+        return keycloak;
+    }
 }
