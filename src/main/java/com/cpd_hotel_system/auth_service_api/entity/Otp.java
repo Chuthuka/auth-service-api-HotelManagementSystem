@@ -30,7 +30,7 @@ public class Otp {
     private boolean isVerified;
 
     @Column(name="attempts")
-    private boolean attempts;
+    private Integer attempts;
 
     @OneToOne
     @JoinColumn(name = "system_user_id",nullable = false,unique = true)
