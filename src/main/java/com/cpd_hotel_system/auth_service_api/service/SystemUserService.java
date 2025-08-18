@@ -1,4 +1,4 @@
-package com.cpd_hotel_system.auth_service_api.system;
+package com.cpd_hotel_system.auth_service_api.service;
 
 import com.cpd_hotel_system.auth_service_api.dto.request.SystemUserRequestDto;
 

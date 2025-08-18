@@ -1,4 +1,4 @@
-package com.cpd_hotel_system.auth_service_api.system.impl;
+package com.cpd_hotel_system.auth_service_api.service.impl;
 
 import com.cpd_hotel_system.auth_service_api.entity.Otp;
 import com.cpd_hotel_system.auth_service_api.exception.BadRequestException;
@@ -8,7 +8,7 @@ import com.cpd_hotel_system.auth_service_api.entity.SystemUser;
 import com.cpd_hotel_system.auth_service_api.exception.DuplicateEntryException;
 import com.cpd_hotel_system.auth_service_api.repo.OtpRepo;
 import com.cpd_hotel_system.auth_service_api.repo.SystemUserRepo;
-import com.cpd_hotel_system.auth_service_api.system.SystemUserService;
+import com.cpd_hotel_system.auth_service_api.service.SystemUserService;
 import com.cpd_hotel_system.auth_service_api.util.OtpGenerator;
 import jakarta.ws.rs.core.Response;
 import lombok.RequiredArgsConstructor;
