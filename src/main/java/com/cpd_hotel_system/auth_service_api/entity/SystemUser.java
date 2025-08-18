@@ -36,6 +36,9 @@ public class SystemUser {
     @Column(name="is_active")
     private boolean isActive;
 
+    @Column(name = "is_account_non_expired")
+    private boolean isAccountNonExpired;
+
     @Column(name="is_account_non_locked")
     private boolean isAccountNonLocked;
 
